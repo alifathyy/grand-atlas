@@ -1,7 +1,7 @@
 import { FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 
-export default function Hero({ title, text, image, height = 560 }) {
+export default function Hero({ title, text, image, height = 560, children }) {
   return (
     <section
       className="hero"
@@ -17,6 +17,7 @@ export default function Hero({ title, text, image, height = 560 }) {
       <div className="hero-content">
         <h1>{title}</h1>
         <p>{text}</p>
+        {children}
       </div>
     </section>
   )
