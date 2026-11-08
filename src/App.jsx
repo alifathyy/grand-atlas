@@ -3,6 +3,7 @@ import Layout from './components/Layout'
 import Home from './pages/Home'
 import Units from './pages/Units'
 import Zones from './pages/Zones'
+import ZoneProjects from './pages/ZoneProjects'
 import Developers from './pages/Developers'
 import Contact from './pages/Contact'
 
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/units" element={<Units />} />
           <Route path="/zones" element={<Zones />} />
+          <Route path="/zones/:id" element={<ZoneProjects />} />
           <Route path="/developers" element={<Developers />} />
           <Route path="/contact" element={<Contact />} />
         </Route>
